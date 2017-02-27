@@ -1,0 +1,9 @@
+<h1>Who's Playing Today!</h1>
+
+<% data["games"].forEach(function(game){ %>
+    <ul>
+        <li><%= game["home"]["name"]%> Vs. <%=game["away"]["name"]%>
+
+        </li>
+    </ul>
+<% }); %>
