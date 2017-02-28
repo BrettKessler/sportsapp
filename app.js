@@ -4,10 +4,10 @@ console.log("The Bot is Starting");
 var Twit = require("twit");
 
 var T = new Twit({
-  consumer_key:         'UqxZitdHtCyA7jRFwlryJSYqR',
-  consumer_secret:      'nXPxxj7rpOUbNT2ezqW7Hoat6SYy0rvAFoyKKqtppyvVY1k4NA',
-  access_token:         '824704196511404032-zor9HVMcp5lbPfcJA6h36HjMFnLdjJq',
-  access_token_secret:  'Kh3f0I2kWbGuAah4s9d4E0R2OBCV9KWFUSTLEPrqMwX2A',
+  consumer_key:         '*****************',
+  consumer_secret:      '*****************',
+  access_token:         '*****************',
+  access_token_secret:  '*****************',
   timeout_ms:           60*1000,  // optional HTTP request timeout to apply to all requests.
 });
 
@@ -97,7 +97,7 @@ if(mm<10){
 
  
 
-request("https://api.sportradar.us/ncaamb-t3/games/" + yyyy + "/" + mm + "/" + dd + "/schedule.json?api_key=j6mu95u99hsaayj5etfuzh6w", function(error, response, body){
+request("https://api.sportradar.us/ncaamb-t3/games/" + yyyy + "/" + mm + "/" + dd + "/schedule.json?api_key=************", function(error, response, body){
     if(!error && response.statusCode == 200){
         var data = JSON.parse(body);
       data.games.forEach((v,i) => {
